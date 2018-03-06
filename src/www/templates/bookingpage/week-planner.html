@@ -1,0 +1,59 @@
+<!-- Weekpager -->
+<section class="week-planner">
+	<div class="row">
+		<div class="col-xs-12">
+			<nav aria-label="...">
+				<ul class="pager">
+					<li class="previous"><a href="#" id="prev"><span aria-hidden="true">&larr;</span> Prev</a></li>
+					<li><h2 class="fill-space"> Week ${week[0].weekNum} </h2></li>
+					<li class="next"><a href="#" id="next">Next <span aria-hidden="true">&rarr;</span></a></li>
+				</ul>
+			</nav>	
+		</div>
+	</div>
+
+	<!-- Weekschedule -->
+	<!-- Hour row -->
+	<div class="row hour-row">
+		<div class="col-xs-offset-2 col-xs-1"> 08 </div>
+		<div class="col-xs-1"> 09 </div>
+		<div class="col-xs-1"> 10 </div>
+		<div class="col-xs-1"> 11 </div>
+		<div class="col-xs-1"> 12 </div>
+		<div class="col-xs-1"> 13 </div>
+		<div class="col-xs-1"> 14 </div>
+		<div class="col-xs-1"> 15 </div>
+		<div class="col-xs-1"> 16 </div>
+		<div class="col-xs-1"> 17 </div>
+	</div>
+	[repeat week, day]	
+		<div class="row week-schedule-row" data-timestamp='${day.timestamp}'>
+
+			<div class="col-xs-2 day">
+				<div class="day-col">
+					<div class="text-day">
+						<h4 class="month-name"> ${day.month}</h4>
+						<p class="date"> ${day.day} ${day.date} </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="bookings col-xs-10">
+				<div class="row">
+				[repeat day.bookings, booking]
+					<div class="booking col-xs-${booking.hours} 
+						[if booking.offset > 0] col-xs-offset-${booking.offset}[endif]
+						" data-time-from="${booking.timeFrom}" data-time-to="${booking.timeTo}"
+						data-booking-id="${booking._id}">
+						<p>Course: <span class="info-text">${booking.course.name}</span></p>
+						<p>Type: <span class="info-text">${booking.type}</span></p>
+					</div>
+				[endrepeat]
+				</div>
+			</div>
+
+		</div>
+		<div class="vspace"></div>
+	[endrepeat]
+
+</section>

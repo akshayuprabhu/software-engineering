@@ -1,0 +1,114 @@
+[{
+  "username": "akshay@gmail.com",
+  "password": "akshay",
+  "firstname": "Akshay",
+  "lastname": "Prabhu",
+  "phonenumber": "+917259721707",
+  "picture" : "student-4.png"
+},
+  {
+  "username": "student@gmail.com",
+  "password": "student",
+  "firstname": "Aditya",
+  "lastname": "Ananthraman",
+  "phonenumber": "+919441534568",
+  "picture" : "student-2.png"
+},{
+  "username": "student2@gmail.com",
+  "password": "student2",
+  "firstname": "Abhishek",
+  "lastname": "S",
+  "phonenumber": "+919441534568",
+  "picture" : "student-4.png"
+},{
+  "username": "student3@gmail.com",
+  "password": "student3",
+  "firstname": "Amith",
+  "lastname": "Kini",
+  "phonenumber": "+919441534568",
+  "picture" : "student-6.png"
+},{
+  "username": "student4@gmail.com",
+  "password": "student4",
+  "firstname": "Swastik",
+  "lastname": "Udupa",
+  "phonenumber": "+919441534568",
+  "picture" : "student-6.png"
+},{
+  "username": "student5@gmail.com",
+  "password": "student5",
+  "firstname": "",
+  "lastname": "",
+  "phonenumber": "+919441534568",
+  "picture" : "student-6.png"
+},{
+  "username": "student3@gmail.com",
+  "password": "student3",
+  "firstname": "Amith",
+  "lastname": "Kini",
+  "phonenumber": "+919441534568",
+  "picture" : "student-6.png"
+},{
+  "username": "student3@gmail.com",
+  "password": "student3",
+  "firstname": "Amith",
+  "lastname": "Kini",
+  "phonenumber": "+919441534568",
+  "picture" : "student-6.png"
+},{
+  "username": "student3@gmail.com",
+  "password": "student3",
+  "firstname": "Amith",
+  "lastname": "Kini",
+  "phonenumber": "+919441534568",
+  "picture" : "student-6.png"
+},{
+  "username": "palko@gmail.com",
+  "password": "d32r23ra",
+  "firstname": "Anton",
+  "lastname": "Palkosson",
+  "phonenumber": "666-123456",
+  "picture" : "student-2.png"
+},{
+  "username": "olof@gmail.com",
+  "password": "fra1fwefe234",
+  "firstname": "Olof",
+  "lastname": "Batra",
+  "phonenumber": "070-4153456",
+  "picture" : "student-2.png"
+},{
+  "username": "Fredrik@gmail.com",
+  "password": "pifnwef2",
+  "firstname": "Fredrik",
+  "lastname": "Reinfeldt",
+  "phonenumber": "020-4443456",
+  "picture" : "default.png"
+},{
+  "username": "Akesson@gmail.com",
+  "password": "lol1f23r23234",
+  "firstname": "Jimmie",
+  "lastname": "Åkesson",
+  "phonenumber": "040-2342545",
+  "picture" : "student-5.png"
+},{
+  "username": "Jossan@gmail.com",
+  "password": "plof23r21234",
+  "firstname": "Josefin",
+  "lastname": "Birgersson",
+  "phonenumber": "010-234311",
+  "picture" : "default.png"
+},{
+  "username": "Klara@gmail.com",
+  "password": "liq1234",
+  "firstname": "Klara",
+  "lastname": "Klarasson",
+  "phonenumber": "020-8831676",
+  "picture" : "student-2.png"
+},{
+  "username": "kanin@gmail.com",
+  "password": "r2o3int23o",
+  "firstname": "Kanin",
+  "lastname": "Kaninsson",
+  "phonenumber": "666-123456",
+  "picture" : "student-1.png"
+}]

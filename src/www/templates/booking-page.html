@@ -1,0 +1,50 @@
+<section class="booking-page">
+	<div class="row">
+		<div class="col-xs-12">
+			<h1>Booking</h1>
+		</div>
+
+		<!-- Room Selection -->
+		<div class="col-xs-10 col-md-6">
+			<form>
+				<div class="form-group">
+					<label for="roomSelect"> Room </label>
+					<select class="form-control" id="roomSelect">
+						[repeat rooms, room]
+							<option> ${room.name} </option>
+						[endrepeat]
+					</select>
+				</div>
+
+
+				<div class="room-info">
+					<div class="shell"></div>
+					<p>
+			          	<strong> Seats: </strong>
+			          	<span class="seats"> 150</span>
+			          	<span class="separator"></span>
+			          	<strong> Projector: </strong>
+			          	<span class="projector"> Yes </span>
+			        </p>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

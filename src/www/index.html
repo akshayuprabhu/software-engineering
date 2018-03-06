@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LMS</title>
+	<meta charset="utf8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/all.css">
+
+	<!-- js general files, should be no reason to touch these -->
+	<script src="libs/js/jquery.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/js/template.jquery.js"></script>
+	<script src="libs/js/rest-entity.class.js"></script>
+	<script src="libs/js/moment.js"></script>
+	<script src="libs/js/momentformat.js"></script>
+
+	<!-- CLASSES -->
+	<script src="js/admin/admin-create.class.js"></script>
+	<script src="js/admin/admin-edit.class.js"></script>
+	<script src="js/admin/admin-filter.class.js"></script>
+	<script src="js/admin/admin-sidebar.class.js"></script>
+	<script src="js/admin/admin-frontpage.class.js"></script>
+	<script src="js/admin/admin-search.class.js"></script>
+	<script src="js/teacher/teacher-message.class.js"></script>
+	<script src="js/teacher/teacher-posted-message.class.js"></script>
+	<script src="js/student/student-announcement.class.js"></script>
+	<script src="js/student/student-alert.class.js"></script>
+	<script src="js/courses-frontpage.class.js"></script>
+	<script src="js/loginpage.class.js"></script>
+	<script src="js/sidebar.class.js"></script>
+	<script src="js/navbar.class.js"></script>
+	<script src="js/course-page.class.js"></script>
+	<script src="js/booking-page.class.js"></script>
+	<script src="js/week-planner.class.js"></script>
+	<script src="js/booking-modal.class.js"></script>
+	<script src="js/booking-info-modal.class.js"></script>
+	<script src="js/profile.class.js"></script>
+	<script src="js/upload-picture.class.js"></script>
+
+	<!-- JS MAINS -->
+	<script src="js/main/router.js"></script>
+	<script src="js/main/main.js"></script>
+	<script src="js/main/admin.js"></script>
+	<script src="js/main/student.js"></script>
+	<script src="js/main/teacher.js"></script>
+
+</head>
+
+<body>
+	<!-- Sidebar background on desktop -->
+	<div class='hidden-xs sidebar-background'></div>
+
+	<div class='container-fluid'>
+		<div class='row'>
+			<!-- Sidebar on desktop -->
+			<div class='hidden-xs col-sm-3 sidebar'>
+				<div class="sidebar-container"></div>
+			</div>
+
+			<!-- Main Content -->
+			<div class='col-xs-12 col-sm-9'>
+				<div class='navbar'></div>
+				<div class='page-content'>
+					<!-- Student & Teacher -->
+					<div class='student-alert-container'></div>
+					<div class='student-announcement-container'></div>
+					<div class="teacher-messages-container"></div>
+					<div class="front-course-container"></div>
+					<div class="teacher-posted-messages-container"></div>
+					<div class="course-page-container"></div>
+					<div class="booking-page-container"></div>
+					<div class="booking-modal-container"></div>
+					<div class="booking-info-modal-container"></div>
+					<div class="week-planner-container"></div>
+					<div class="profile-page-container"></div>
+
+					<!-- Admin -->
+					<div class="admin-create-container"></div>
+					<div class="admin-search-container"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Sidebar on phones -->
+	<div class='wrapper-sidebar'>
+		<div class='sidebar-slide sidebar'>
+			<div class='container-fluid'>
+				<div class="sidebar-container"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

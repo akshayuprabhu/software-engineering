@@ -1,0 +1,36 @@
+[{
+  "username": "teacher@gmail.com",
+  "password": "teacher",
+  "firstname": "Ram Mohan",
+  "lastname": "Reddy",
+  "phonenumber": "+914453456342",
+  "picture" : "teacher-1.png"
+},{
+  "username": "teacher2@gmail.com",
+  "password": "teacher1",
+  "firstname": "Ananthnarayana",
+  "lastname": "V S",
+  "phonenumber": "+919453456342",
+  "picture" : "teacher-2.png"
+},{
+  "username": "teacher3@gmail.com",
+  "password": "teacher3",
+  "firstname": "Geetha",
+  "lastname": "V",
+  "phonenumber": "+919453456342",
+  "picture" : "teacher-3.png"
+},{
+  "username": "teacher4@gmail.com",
+  "password": "teacher4",
+  "firstname": "Dinesh",
+  "lastname": "Naik",
+  "phonenumber": "+919453456342",
+  "picture" : "teacher-1.png"
+},{
+  "username": "teacher5@gmail.com",
+  "password": "teacher5",
+  "firstname": "Sowmya",
+  "lastname": "Kamath",
+  "phonenumber": "+919453456342",
+  "picture" : "teacher-2.png"
+}]

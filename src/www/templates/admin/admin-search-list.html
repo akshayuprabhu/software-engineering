@@ -1,0 +1,45 @@
+<h3>${mainType}</h3>
+[repeat mainItems, key, item]
+
+	<li item-id="${item._id}">
+		[if type == "student" || type == "teacher"]
+			<a>${item.firstname} ${item.lastname}</a> ${item.username}
+		[else if type == "admin"]
+			<a>${item.username}</a>
+		[else if type == "education" || type == "course"]
+			<a>${item.name}</a>
+		[else if type == "room"]
+			<a>${item.name}</a> ${item.description}
+		[else if type == "booking"]
+			<a>${item.room.name}</a>
+			<p>${item.date.substring(0,10)} From: ${(item.timeFrom.substring(11,16))} To ${item.timeTo.substring(11,16)}</p>
+		[else if type == "announcement"]
+			<a>${item.message.substring(0,25)} ...</a>
+			<span>${item.timeCreated.substring(0,10)}</span>
+		[endif]
+	</li>
+[endrepeat]
+
+[repeat populatedItems, listType, itemArray]
+	<h3>${listType} <small>matched: ${itemArray.name} etc</small></h3>
+
+	[repeat itemArray.items, key, item]
+		<li item-id="${item._id}">
+			[if type == "student" || type == "teacher"]
+				<a>${item.firstname} ${item.lastname}</a> ${item.username}
+			[else if type == "admin"]
+				<a>${item.username}</a>
+			[else if type == "education" || type == "course"]
+				<a>${item.name}</a>
+			[else if type == "room"]
+				<a>${item.name}</a> ${item.description}
+			[else if type == "booking"]
+				<a>${itemArray.name}</a>
+				<p>${item.date.substring(0,10)} From: ${(item.timeFrom.substring(11,16))} To ${item.timeTo.substring(11,16)}</p>
+			[else if type == "announcement"]
+				<a>${item.message.substring(0,25)} ...</a>
+				<span>${item.timeCreated.substring(0,10)}</span>
+			[endif]
+		</li>
+	[endrepeat]
+[endrepeat]

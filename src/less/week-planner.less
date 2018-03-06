@@ -1,0 +1,92 @@
+.week-planner{
+
+	.previous, .next {
+	    a {
+	        border: 0.11em solid @custom-color-black;
+	        background-color: @custom-color-white;
+	        border-radius: 6px;
+	        color: black;
+	        &:hover {
+	            .custom-hover-links;
+	        }
+	    }
+	}
+
+
+	.fill-space{
+		display: inline-block;
+		margin: 0;
+	}
+
+	.hour-row{
+		div{
+			padding: 0;
+		}
+
+		font-size: 10px;
+	}
+
+	.vspace{
+		height: 10px;
+	}
+
+	.alert{
+		position: absolute;
+		top: 50%;
+		left: 25%;
+		right: 25%;
+		-webkit-box-shadow: -11px 0px 74px -20px rgba(0,0,0,0.95);
+		moz-box-shadow: -11px 0px 74px -20px rgba(0,0,0,0.95);
+		box-shadow: -11px 0px 74px -20px rgba(0,0,0,0.95);
+	}
+
+	.week-schedule-row{
+		cursor: pointer;
+		cursor: hand;
+		background-color: @custom-color-grey-lighter;
+
+		div.day{
+			padding: 0;
+		}
+
+		.day-col{
+			height: 50px;
+			background-color: @custom-color-black;
+			padding-left: 12px;
+			color: @custom-color-grey-lighter;
+
+			.text-day {
+					margin-top: -10px;
+
+				.month-name{
+					padding-top: 10px;
+				}
+
+				.date{
+					margin-top: -10px;
+					color: @custom-color-white;
+					font-weight: 400;
+					font-size: 14px;
+				}
+			}
+
+		}
+
+		.booking{
+			border-radius: 3px;
+			padding: 5px;
+			background-color: @custom-color-green;
+			height: 50px;
+
+			p{
+				text-align: right;
+				font-size: 10px;
+				margin: 0;
+			}
+
+			.info-text{
+				font-style: italic;
+			}
+		}
+	}
+}

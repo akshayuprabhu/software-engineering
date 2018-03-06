@@ -1,0 +1,55 @@
+<!-- Book a room modal-->
+<div class="modal" id="bookingModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"> Reserve a time in ${room.name}</h4>
+      </div>
+      <div class="modal-body">
+        	<form>
+
+            <p class="date"> <strong>Date:</strong> ${dateInfo} </p>
+
+            <div class="form-group">
+                <label for="courseSelect" class="control-label">Course</label>
+                <select class="form-control" id="courseSelect">
+                  <option selected disabled> Choose a course</option>
+                  [repeat courses, course]
+                    <option data-course-id='${course._id}'> ${course.name} </option>
+                  [endrepeat]
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="timeSelect" class="control-label">Time</label>
+                <select class="form-control" id="timeSelect">
+                  <option selected disabled> Choose a time</option>
+                  <option value="morning"> Morning </option>
+                  <option value="afternoon"> Afternoon </option>
+                  <option value="wholeday"> Whole day </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="typeSelect" class="control-label">Type</label>
+                <select class="form-control" id="typeSelect">
+                  [if userRole !== 'Student']
+                    <option selected disabled> Type of booking</option>
+                    <option value="Class"> Class </option>
+                    <option value="Examination"> Examination </option>
+                    <option value="Meeting"> Meeting </option>
+                  [endif]
+                  <option value="Groupwork"> Group work </option>
+                </select>
+            </div>
+
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary book-button">Book!</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

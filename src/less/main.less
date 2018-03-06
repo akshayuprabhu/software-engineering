@@ -1,0 +1,144 @@
+// Google Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:200, 300,400,400i,500,500i,700,700i');
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+// Custom Variables & Mixins for useage through whole project
+// --------------------------------------------------
+
+//** Screen Breakpoints
+//
+//## @screen-sm is our current breaking point for toggled sidebar
+
+@screen-xs: 480px;
+@screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1200px;
+
+@screen-xs-max: (@screen-sm - 1);
+@screen-sm-max: (@screen-md - 1);
+@screen-md-max: (@screen-lg - 1);
+
+//** Sidebar Widths
+
+@sidebar-width: 300px;
+@sidebar-width-toggled: 92vw;
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+@custom-color-white: #FAFAFA;
+@custom-color-black: #31312e;
+@custom-color-grey: #424242;
+@custom-color-grey-light: #616161;
+@custom-color-grey-lighter: #BDBDBD;
+
+@custom-color-red: #EF5350;
+@custom-color-yellow: #FFB74D;
+@custom-color-green: #81C784;
+@custom-color-purple: #9FA8DA;
+@custom-color-beige: #F6F5EF;
+
+// buttons
+
+//btn-primary
+@btn-primary-color:              @custom-color-white;
+@btn-primary-bg:                 @custom-color-green;
+@btn-primary-border:             darken(@btn-primary-bg, 5%);
+
+// btn-info
+@btn-info-color:                 @custom-color-white;
+@btn-info-bg:                    @custom-color-grey-light;
+@btn-info-border:                darken(@btn-info-bg, 5%);
+
+// Headings
+h1 {
+    color: @custom-color-black;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h2 {
+    color: @custom-color-black;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h3 {
+	font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase
+}
+
+h4 {
+	font-size: 14px;
+	font-weight: 300;
+	text-transform: uppercase
+}
+
+//** Mixins
+
+.custom-transition-5s {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.custom-hover-links {
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	opacity: 0.2;
+}
+
+// Mixins specific for sidebar
+
+.teacher-sidebar-color { background: @custom-color-green }
+.student-sidebar-color { background: @custom-color-red }
+.admin-sidebar-color { background: @custom-color-purple }
+
+.menu-margin-left { margin-left: 22px;}
+.menu-box-style {
+	display: flex;
+  align-items: center;
+	height: 40px;
+  padding-left: 37px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+//** ALL MEDIA QUERIES for the full project
+
+@media(min-width: @screen-sm) {
+	// navbar.less
+	.navbar nav .nav-box .nav-hamburger, .nav-toggle, .nav-arrow { .hidden; }
+	.menu-toggle { display: none; }
+}
+
+@media(max-width: @screen-xs-max) {
+
+	.menu-toggle {
+		display: inline-block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 24px;
+		height: 20px;
+		cursor: pointer;
+		z-index: 1;
+	}
+
+	// sidebar.less
+
+	.sidebar .menu { width: @sidebar-width-toggled; }
+	.profile-container .profile-picture { max-width: 120px; }
+}
