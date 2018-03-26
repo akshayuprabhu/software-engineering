@@ -39,10 +39,10 @@ var classesToLoad = {
 	Teacher: 'module',
 	Admin: 'module',
 	Education: 'module',
-	// Room: 'module',
+	Room: 'module',
 	Announcement: 'module',
 	Student: 'module',
-	// Booking: 'module'
+	Booking: 'module'
 };
 
 for(let className in classesToLoad) {
@@ -83,10 +83,10 @@ new Restrouter(app, Teacher);
 new Restrouter(app, Student);
 new Restrouter(app, Course);
 new Restrouter(app, Education);
-// new Restrouter(app, Room);
+new Restrouter(app, Room);
 new Restrouter(app, Admin);
 new Restrouter(app, Announcement);
-// new Restrouter(app, Booking);
+new Restrouter(app, Booking);
 new Loginhandler(app);
 
 // A path to get user roles
