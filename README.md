@@ -1,3 +1,3 @@
-# software-engineering
+# Software Engineering (IT350)
 
-Student Management system as a part of SE course.
+Student Management System as a part of SE course.
